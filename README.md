@@ -16,19 +16,19 @@ These twelve skills mirror a documentation-driven V-model workflow, named to a u
 `<step>-spec` convention. Steps 1-10 are sequential phases of the V-model; `commit-spec` and
 `audit-spec` are cross-cutting steps callable at any point in the flow.
 
-| #   | Skill                                                       | Output artifact                                                                          |
-| --- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| 1   | [`constitution-spec`](./constitution-spec/SKILL.md)         | `.speckit/memory/constitution.md`                                                        |
-| 2   | [`documentation-spec`](./documentation-spec/SKILL.md)       | `docs/overview.md`, `docs/module.md`, `docs/logic/<api|task|callback>.md`                |
-| 3   | [`specify-spec`](./specify-spec/SKILL.md)                   | `specs/<feature-slug>/spec.md` (feature + current implementation)                        |
-| 4   | [`clarify-spec`](./clarify-spec/SKILL.md)                   | Updated `specs/<feature-slug>/spec.md` with resolved markers                             |
-| 5   | [`plan-spec`](./plan-spec/SKILL.md)                         | `specs/<feature-slug>/plan.md` (+ optional `data-model.md`, `research.md`)               |
-| 6   | [`tasks-spec`](./tasks-spec/SKILL.md)                       | `specs/<feature-slug>/tasks.md`                                                          |
-| 7   | [`analyze-spec`](./analyze-spec/SKILL.md)                   | `specs/<feature-slug>/analysis.md` (read-only consistency report)                        |
-| 8   | [`implement-spec`](./implement-spec/SKILL.md)               | Source code that satisfies `specs/<feature-slug>/tasks.md`                               |
-| 9   | [`unittest-spec`](./unittest-spec/SKILL.md)                 | Unit tests + `specs/<feature-slug>/unit-test.md`                                         |
-| 10  | [`integration-test-spec`](./integration-test-spec/SKILL.md) | Integration tests + `specs/<feature-slug>/integration-test.md`                           |
-| -   | [`commit-spec`](./commit-spec/SKILL.md)                     | Conventional-commit message + commit (cross-cutting)                                     |
+| #   | Skill                                                       | Output artifact                                                                              |
+| --- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 1   | [`constitution-spec`](./constitution-spec/SKILL.md)         | `.speckit/memory/constitution.md`                                                            |
+| 2   | [`documentation-spec`](./documentation-spec/SKILL.md)       | `docs/overview.md`, `docs/module.md`, `docs/logic/<api/task/callback>.md`                    |
+| 3   | [`specify-spec`](./specify-spec/SKILL.md)                   | `specs/<feature-slug>/spec.md` (feature + current implementation)                            |
+| 4   | [`clarify-spec`](./clarify-spec/SKILL.md)                   | Updated `specs/<feature-slug>/spec.md` with resolved markers                                 |
+| 5   | [`plan-spec`](./plan-spec/SKILL.md)                         | `specs/<feature-slug>/plan.md` (+ optional `data-model.md`, `research.md`)                   |
+| 6   | [`tasks-spec`](./tasks-spec/SKILL.md)                       | `specs/<feature-slug>/tasks.md`                                                              |
+| 7   | [`analyze-spec`](./analyze-spec/SKILL.md)                   | `specs/<feature-slug>/analysis.md` (read-only consistency report)                            |
+| 8   | [`implement-spec`](./implement-spec/SKILL.md)               | Source code that satisfies `specs/<feature-slug>/tasks.md`                                   |
+| 9   | [`unittest-spec`](./unittest-spec/SKILL.md)                 | Unit tests + `specs/<feature-slug>/unit-test.md`                                             |
+| 10  | [`integration-test-spec`](./integration-test-spec/SKILL.md) | Integration tests + `specs/<feature-slug>/integration-test.md`                               |
+| -   | [`commit-spec`](./commit-spec/SKILL.md)                     | Conventional-commit message + commit (cross-cutting)                                         |
 | -   | [`audit-spec`](./audit-spec/SKILL.md)                       | `specs/<feature-slug>/audit.md` or `<output-dir>/audit.md` for whole-project (cross-cutting) |
 
 ## Getting started
