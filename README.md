@@ -12,9 +12,9 @@ analyze, implement, integration-test, audit, commit).
 
 ## Skills
 
-These twelve skills mirror a documentation-driven V-model workflow, named to a uniform
-`<step>-spec` convention. Steps 1-10 are sequential phases of the V-model; `commit-spec` and
-`audit-spec` are cross-cutting steps callable at any point in the flow.
+These thirteen skills mirror a documentation-driven V-model workflow, named to a uniform
+`<step>-spec` convention. Steps 1-10 are sequential phases of the V-model; `research-spec`,
+`commit-spec`, and `audit-spec` are cross-cutting steps callable at any point in the flow.
 
 | #   | Skill                                                       | Output artifact                                                                              |
 | --- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -28,6 +28,7 @@ These twelve skills mirror a documentation-driven V-model workflow, named to a u
 | 8   | [`implement-spec`](./implement-spec/SKILL.md)               | Source code that satisfies `specs/<feature-slug>/tasks.md`                                   |
 | 9   | [`unittest-spec`](./unittest-spec/SKILL.md)                 | Unit tests + `specs/<feature-slug>/unit-test.md`                                             |
 | 10  | [`integration-test-spec`](./integration-test-spec/SKILL.md) | Integration tests + `specs/<feature-slug>/integration-test.md`                               |
+| -   | [`research-spec`](./research-spec/SKILL.md)                 | `specs/<feature-slug>/research.md` or `docs/research/<topic-slug>.md` (cross-cutting)        |
 | -   | [`commit-spec`](./commit-spec/SKILL.md)                     | Conventional-commit message + commit (cross-cutting)                                         |
 | -   | [`audit-spec`](./audit-spec/SKILL.md)                       | `specs/<feature-slug>/audit.md` or `<output-dir>/audit.md` for whole-project (cross-cutting) |
 
@@ -36,6 +37,7 @@ These twelve skills mirror a documentation-driven V-model workflow, named to a u
 1. Install these skill folders into your coding agent as "agent skills".
 2. Start a feature by running `documentation-spec` (global view) and `specify-spec` (feature spec).
 3. Use `clarify-spec` -> `plan-spec` -> `tasks-spec` -> `analyze-spec` before you implement.
+4. Invoke `research-spec` whenever a stack choice, architecture direction, or open-source comparison needs stronger evidence; it can run before planning or later when a decision is disputed.
 
 For background and installation concepts, see:
 - https://docs.github.com/zh/copilot/concepts/agents/about-agent-skills
@@ -57,10 +59,13 @@ For background and installation concepts, see:
    many, not the only gate.
 6. **Test-as-verification, not test-first dogma.** Unit and integration test skills exist as
    explicit steps but the agent is not forced into red/green order.
-7. **Checkpoint freely.** `commit-spec` is callable at any phase, not only at the end. All
+7. **Research is a first-class cross-cutting step.** `research-spec` may be invoked at any
+   point to compare the current project against open-source precedents, gather papers or formal
+   references, and evaluate technology choices before or during implementation.
+8. **Checkpoint freely.** `commit-spec` is callable at any phase, not only at the end. All
    in-progress commits for one feature share a feature-keyword prefix
    (`feat(<feature-slug>): ...`); the final commit is explicitly marked done.
-8. **Audit is a first-class cross-cutting step.** Use `audit-spec` after implementation (and
+9. **Audit is a first-class cross-cutting step.** Use `audit-spec` after implementation (and
    ideally after tests) to surface correctness, traceability, and design issues for follow-up,
    each tagged with BLOCKER / MAJOR / MINOR / INFO severity.
 
