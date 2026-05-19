@@ -8,27 +8,27 @@
 
 这 13 个 skills 对应一个以文档为驱动的 V 模型工作流，并统一采用 `<step>-spec` 的命名约定。步骤 1–10 是按序推进的 V 模型阶段；`research-spec`、`commit-spec` 与 `audit-spec` 是可在流程任意阶段调用的横切步骤。
 
-| #   | Skill                                                       | 输出工件                                                                       |
-| --- | ----------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| 1   | [`constitution-spec`](./constitution-spec/SKILL.md)         | `.speckit/memory/constitution.md`                                              |
-| 2   | [`documentation-spec`](./documentation-spec/SKILL.md)       | `docs/overview.md`, `docs/module.md`, `docs/logic/<api/task/callback>.md`      |
-| 3   | [`specify-spec`](./specify-spec/SKILL.md)                   | `specs/<feature-slug>/spec.md`（包含 feature + current implementation）        |
-| 4   | [`clarify-spec`](./clarify-spec/SKILL.md)                   | 更新后的 `specs/<feature-slug>/spec.md`（已解析 markers）                      |
-| 5   | [`plan-spec`](./plan-spec/SKILL.md)                         | `specs/<feature-slug>/plan.md`（可选附带 `data-model.md`, `research.md`）      |
-| 6   | [`tasks-spec`](./tasks-spec/SKILL.md)                       | `specs/<feature-slug>/tasks.md`                                                |
-| 7   | [`analyze-spec`](./analyze-spec/SKILL.md)                   | `specs/<feature-slug>/analysis.md`（只读一致性报告）                           |
-| 8   | [`implement-spec`](./implement-spec/SKILL.md)               | 满足 `specs/<feature-slug>/tasks.md` 的源代码变更                              |
-| 9   | [`unittest-spec`](./unittest-spec/SKILL.md)                 | 单元测试 + `specs/<feature-slug>/unit-test.md`                                 |
-| 10  | [`integration-test-spec`](./integration-test-spec/SKILL.md) | 集成测试 + `specs/<feature-slug>/integration-test.md`                          |
-| -   | [`research-spec`](./research-spec/SKILL.md)                 | `specs/<feature-slug>/research.md` 或 `docs/research/<topic-slug>.md`（横切）  |
-| -   | [`commit-spec`](./commit-spec/SKILL.md)                     | Conventional-commit message + commit（横切）                                   |
-| -   | [`audit-spec`](./audit-spec/SKILL.md)                       | `specs/<feature-slug>/audit.md` 或用于全项目的 `<output-dir>/audit.md`（横切） |
+| #   | Skill                                                       | 输出工件                                                                                                 |
+| --- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 1   | [`constitution-spec`](./constitution-spec/SKILL.md)         | `.speckit/memory/constitution.md`                                                                        |
+| 2   | [`documentation-spec`](./documentation-spec/SKILL.md)       | `docs/overview.md`, `docs/module.md`, `docs/logic/<api/task/callback>.md`                                |
+| 3   | [`specify-spec`](./specify-spec/SKILL.md)                   | `specs/<feature-slug>/spec.md`（包含 feature + current implementation）                                  |
+| 4   | [`clarify-spec`](./clarify-spec/SKILL.md)                   | 更新后的 `specs/<feature-slug>/spec.md`（已解析 markers）                                                |
+| 5   | [`plan-spec`](./plan-spec/SKILL.md)                         | `specs/<feature-slug>/plan.md`（可选附带 `data-model.md`, `research.md`）或 `docs/plans/<topic-slug>.md` |
+| 6   | [`tasks-spec`](./tasks-spec/SKILL.md)                       | `specs/<feature-slug>/tasks.md`                                                                          |
+| 7   | [`analyze-spec`](./analyze-spec/SKILL.md)                   | `specs/<feature-slug>/analysis.md`（只读一致性报告）                                                     |
+| 8   | [`implement-spec`](./implement-spec/SKILL.md)               | 满足 `specs/<feature-slug>/tasks.md` 的源代码变更                                                        |
+| 9   | [`unittest-spec`](./unittest-spec/SKILL.md)                 | 单元测试 + `specs/<feature-slug>/unit-test.md`                                                           |
+| 10  | [`integration-test-spec`](./integration-test-spec/SKILL.md) | 集成测试 + `specs/<feature-slug>/integration-test.md`                                                    |
+| -   | [`research-spec`](./research-spec/SKILL.md)                 | `specs/<feature-slug>/research.md` 或 `docs/research/<topic-slug>.md`（横切）                            |
+| -   | [`commit-spec`](./commit-spec/SKILL.md)                     | Conventional-commit message + commit（横切）                                                             |
+| -   | [`audit-spec`](./audit-spec/SKILL.md)                       | `specs/<feature-slug>/audit.md` 或用于全项目的 `<output-dir>/audit.md`（横切）                           |
 
 ## Getting started
 
 1. 将这些 skill 目录安装到你的 coding agent 中，作为 “agent skills”。
 2. 启动一个 feature 时，先运行 `documentation-spec`（建立全局视图）与 `specify-spec`（生成 feature spec）。
-3. 在开始实现之前，按 `clarify-spec` -> `plan-spec` -> `tasks-spec` -> `analyze-spec` 的顺序推进。
+3. 在开始实现之前，按 `clarify-spec` -> `plan-spec` -> `tasks-spec` -> `analyze-spec` 的顺序推进。若是 greenfield 或跨 feature 系统规划，可先让 `plan-spec` 产出 `docs/plans/<topic-slug>.md` 作为 project-level 指南。
 4. 当技术选型、架构方向或与开源实现的对比需要更强证据时，随时调用 `research-spec`；它既可以放在 planning 前，也可以在后续争议出现时重跑。
 
 背景与安装概念可参考：
