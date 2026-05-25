@@ -85,6 +85,7 @@ Cross-cutting steps (callable at any point in the flow):
 - **Templates are references, not religion.** Respect `templates/commit-message.md`'s required sections (subject, body, trailers). Sections may be reordered or extended when the project clearly calls for it. Required sections MUST NOT be deleted without explicit user approval.
 - **Safety controls.** Never bypass VCS safety controls: no `--force` push, no `--no-verify`, no destructive resets, no rewriting of pushed history without explicit user confirmation.
 - **Escalation.** If you encounter an unresolved situation that you cannot ground in the inputs (missing required artifact, ambiguous diff, mixed-feature commit, conflicting trailers, contradictory user answers), stop and ask the user. Consolidate related questions into one message; never guess and never silently proceed.
+- **Plain-text symbols only.** Do not emit emoji, Unicode decorative punctuation (curly quotes, em-dash, ellipsis), or non-ASCII decorative symbols in any generated document; use ASCII equivalents instead (e.g., `->` for arrows, `...` for ellipsis, straight `"` for quotes, `-` for dashes). Exception: CJK characters in zh-cn skill outputs are permitted as linguistic content; code blocks and Mermaid diagrams are exempt.
 
 ## Handoff
 

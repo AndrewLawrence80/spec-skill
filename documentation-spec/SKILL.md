@@ -85,6 +85,7 @@ Cross-cutting steps (callable at any point in the flow):
 - **Mermaid is required for non-trivial flows.** Use Mermaid sequence diagrams to describe entry-point call sequences and cross-module data flows. Plain prose may supplement but not replace a diagram for non-trivial flows.
 - **Marker scope.** Use `TODO(<topic>): ...` here for facts that are not yet evident in the code; a `TODO` is resolved when the documented fact is verified against the codebase or the user.
 - **Escalation.** If you encounter an unresolved situation that you cannot ground in the inputs (missing required artifact, ambiguous evidence, conflicting documentation, contradictory user answers), stop and ask the user. Consolidate related questions into one message; never guess and never silently proceed.
+- **Plain-text symbols only.** Do not emit emoji, Unicode decorative punctuation (curly quotes, em-dash, ellipsis), or non-ASCII decorative symbols in any generated document; use ASCII equivalents instead (e.g., `->` for arrows, `...` for ellipsis, straight `"` for quotes, `-` for dashes). Exception: CJK characters in zh-cn skill outputs are permitted as linguistic content; code blocks and Mermaid diagrams are exempt.
 
 ## Handoff
 

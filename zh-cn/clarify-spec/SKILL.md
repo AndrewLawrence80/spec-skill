@@ -88,6 +88,7 @@ phase: 4
 - **Templates are references, not religion.** spec 的必填章节不得删除；可在解析新增信息时扩展章节。
 - **User approval is mandatory.** 任何写回到 spec 的解析结论（即使有 docs/代码引用支撑）也必须先获得用户明确批准；不得静默应用。
 - **Escalation.** 遇到无法落地的问题，停止并向用户提问；相关问题合并为一条消息；不得猜测，不得默默继续。
+- **仅使用纯文本符号。** 不得在生成的文档中输出 emoji、Unicode 装饰性标点（弯引号、破折号、省略号）或非 ASCII 装饰性符号；请使用 ASCII 等价形式（例如 `->` 代替箭头符号、`...` 代替省略号字符、直引号代替弯引号、`-` 代替破折号）。例外：zh-cn skill 输出中的 CJK 字符作为语言内容是允许的；代码块与 Mermaid 图表同样豁免。
 
 ## 交接建议
 

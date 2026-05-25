@@ -137,6 +137,7 @@ project 级模板更强调横切模块、平台约束与架构分块；spec 级�
 - **Use the local research templates first.** 优先使用 `research-spec/templates/spec-level-research.md` 与 `research-spec/templates/project-level-research.md`。
 - **Templates are references, not religion.** 尊重所选模板的意图与必填章节；必要时可轻微重排或扩展，但不要无故删除关键信息。
 - **Escalation.** 若当前 feature 或决策范围过于模糊，无法严肃开展调研，应停止并用一条合并消息向用户提问，而不是产出空泛调研。
+- **仅使用纯文本符号。** 不得在生成的文档中输出 emoji、Unicode 装饰性标点（弯引号、破折号、省略号）或非 ASCII 装饰性符号；请使用 ASCII 等价形式（例如 `->` 代替箭头符号、`...` 代替省略号字符、直引号代替弯引号、`-` 代替破折号）。例外：zh-cn skill 输出中的 CJK 字符作为语言内容是允许的；代码块与 Mermaid 图表同样豁免。
 
 ## 交接建议
 

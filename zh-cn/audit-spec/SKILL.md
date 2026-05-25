@@ -91,6 +91,7 @@ phase: cross-cutting
 - **Templates are references, not religion.** 尊重 `templates/audit.md` 的意图与必填章节；可在项目语境明确时调整顺序或扩展。未经用户明确同意，必填章节不得删除。
 - **Read-only.** 本 skill 永不编辑源工件；发现项是诊断而非补丁。
 - **Escalation.** 遇到无法从输入落地的问题，停止并向用户提问；相关问题合并为一条消息；不得猜测，不得默默继续。
+- **仅使用纯文本符号。** 不得在生成的文档中输出 emoji、Unicode 装饰性标点（弯引号、破折号、省略号）或非 ASCII 装饰性符号；请使用 ASCII 等价形式（例如 `->` 代替箭头符号、`...` 代替省略号字符、直引号代替弯引号、`-` 代替破折号）。例外：zh-cn skill 输出中的 CJK 字符作为语言内容是允许的；代码块与 Mermaid 图表同样豁免。
 
 ## 交接建议
 

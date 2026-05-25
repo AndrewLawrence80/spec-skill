@@ -87,6 +87,7 @@ phase: cross-cutting
 - **Templates are references, not religion.** 尊重 `templates/commit-message.md` 的必填章节（subject、body、trailers）；可在项目语境明确时调整顺序或扩展；未经用户明确同意不得删除必填章节。
 - **Safety controls.** 不绕过 VCS 安全控制：禁止 `--force` push、`--no-verify`、破坏性 reset；未经明确确认不得重写已 push 历史。
 - **Escalation.** 遇到无法落地的问题（缺失必需工件、diff 含糊、混合 feature、trailers 冲突、用户答复矛盾），停止并向用户提问；相关问题合并为一条消息；不得猜测，不得默默继续。
+- **仅使用纯文本符号。** 不得在生成的文档中输出 emoji、Unicode 装饰性标点（弯引号、破折号、省略号）或非 ASCII 装饰性符号；请使用 ASCII 等价形式（例如 `->` 代替箭头符号、`...` 代替省略号字符、直引号代替弯引号、`-` 代替破折号）。例外：zh-cn skill 输出中的 CJK 字符作为语言内容是允许的；代码块与 Mermaid 图表同样豁免。
 
 ## 交接建议
 

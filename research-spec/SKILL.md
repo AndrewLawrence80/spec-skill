@@ -138,6 +138,7 @@ The project-level template may emphasize cross-cutting modules, platform constra
 - **Use the local research templates first.** `research-spec/templates/spec-level-research.md` and `research-spec/templates/project-level-research.md` are the primary templates for this skill.
 - **Templates are references, not religion.** Respect the selected template's intent and required sections, but extend or lightly reorder sections when the project clearly benefits from it.
 - **Escalation.** If the current feature or decision scope is too ambiguous to research responsibly, stop and ask the user for clarification in one consolidated message instead of performing a vague survey.
+- **Plain-text symbols only.** Do not emit emoji, Unicode decorative punctuation (curly quotes, em-dash, ellipsis), or non-ASCII decorative symbols in any generated document; use ASCII equivalents instead (e.g., `->` for arrows, `...` for ellipsis, straight `"` for quotes, `-` for dashes). Exception: CJK characters in zh-cn skill outputs are permitted as linguistic content; code blocks and Mermaid diagrams are exempt.
 
 ## Handoff
 

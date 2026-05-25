@@ -73,6 +73,7 @@ Cross-cutting steps (callable at any point in the flow):
 - **Clear comments.** Every non-obvious logical block should carry a comment explaining its purpose.
 - **Modular design.** Encapsulate related functionality into functions or classes; respect documented module boundaries.
 - **Escalation.** If you encounter an unresolved situation that you cannot ground in the inputs (missing required artifact, ambiguous evidence, conflicting documentation, contradictory user answers), stop and ask the user. Consolidate related questions into one message; never guess and never silently proceed.
+- **Plain-text symbols only.** Do not emit emoji, Unicode decorative punctuation (curly quotes, em-dash, ellipsis), or non-ASCII decorative symbols in any generated document; use ASCII equivalents instead (e.g., `->` for arrows, `...` for ellipsis, straight `"` for quotes, `-` for dashes). Exception: CJK characters in zh-cn skill outputs are permitted as linguistic content; code blocks and Mermaid diagrams are exempt.
 
 ## Handoff
 
