@@ -27,6 +27,7 @@ phase: 7
 
 可在任意阶段调用的横切步骤：
 
+- **Explore** - 在无任何锚点文档时，对陌生代码库进行广度优先探索，写入 `.speckit/memory/exploration.md`。
 - **Commit** - 在版本控制中记录进展。
 - **Audit** - 事后复盘，输出需跟进的设计/代码问题。
 

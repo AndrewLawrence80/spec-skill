@@ -32,6 +32,7 @@ Cross-cutting steps (callable at any point in the flow):
 
 - **Commit** - record progress in version control.
 - **Audit** - retrospective review that surfaces design and code problems for follow-up.
+- **Explore** - survey an unfamiliar codebase and write `.speckit/memory/exploration.md` when no docs or anchor artifacts exist.
 
 ## When to use
 

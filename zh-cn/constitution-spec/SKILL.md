@@ -27,13 +27,13 @@ phase: 1
 
 横切步骤：
 
+- **Explore** - 在无任何锚点文档时，对陌生代码库进行广度优先探索，写入 `.speckit/memory/exploration.md`。
 - **Commit** - 版本控制 checkpoint。
 - **Audit** - 事后复盘审计。
 
 ## 何时使用
 
-- 项目尚无 `.speckit/memory/constitution.md`，需要启动治理基线。
-- 修订既有 constitution：新增、修改或删除原则，或收紧现有规则。
+- 项目尚无 `.speckit/memory/constitution.md`- 修订既有 constitution：新增、修改或删除原则，或收紧现有规则。
 
 ## 输入
 

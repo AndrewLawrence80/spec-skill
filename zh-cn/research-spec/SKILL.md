@@ -28,6 +28,7 @@ phase: cross-cutting
 
 横切步骤：
 
+- **Explore** - 在无任何锚点文档时，对陌生代码库进行广度优先探索，写入 `.speckit/memory/exploration.md`。
 - **Research** - 对比当前项目与外部先例，并评估技术选型。
 - **Commit** - 版本控制 checkpoint。
 - **Audit** - 事后复盘审计。

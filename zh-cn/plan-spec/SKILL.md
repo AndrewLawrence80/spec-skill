@@ -27,6 +27,7 @@ phase: 5
 
 横切步骤：
 
+- **Explore** - 在无任何锚点文档时，对陌生代码库进行广度优先探索，写入 `.speckit/memory/exploration.md`。
 - **Commit** - 版本控制 checkpoint。
 - **Audit** - 事后复盘审计。
 
